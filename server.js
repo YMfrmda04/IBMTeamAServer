@@ -29,6 +29,6 @@ app.use('/api/staff', StaffSignUP);
 app.use('/api/staff/auth', SatffAuth); 
 
  
-//Port
-const port = 5000;
+//Port 
+const port = process.env.PORT || 8080;
 app.listen(port, () => console.log("Port listening on "+ port)); 
